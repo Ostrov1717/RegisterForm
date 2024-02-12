@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <title>Registration form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css\main.css">
+        <link rel="icon" type="image/x-icon" href="image\favicon.ico">
+        <script src="js\script.js"></script>
+    </head>
+<body>
+    <header >
+        <img src="https://www.pravda.com.ua/images/v5/up-logo_ukr.svg" alt="Українська правда">
+    </header>
+        <ul class="nav-top">
+            <li><a class="menu" href="https://www.pravda.com.ua/" target="_blank">Політика</a></li>
+            <li><a class="menu" href="https://www.epravda.com.ua/" target="_blank">ЕП</a></li>
+            <li><a class="menu" href="https://blogs.pravda.com.ua/" target="_blank">Блоги</a></li>
+            <li><a class="menu" href="https://www.istpravda.com.ua/" target="_blank">Історія</a></li>
+            <li><a class="menu" href="https://life.pravda.com.ua/" target="_blank">Життя</a></li>
+            <li><a class="menu" href="https://tabloid.pravda.com.ua/" target="_blank">ТаблоІД</a></li>
+        </ul>
+    <main>
+        <img src="image/Don_Quixote.jpg">
+        <form accept-charset="utf-8">
+        <section class="PersonalInformation">
+            <h1>Реєстраційна форма користувача форума</h1>
+                <label>
+                Прізвище:
+                <input type="text" id="lastName" name="lastName" minlength="1" maxlength="30" size="20">
+                </label>
+                <label>
+                    Імя:
+                     <input type="text" id="firstName" name="firstName" minlength="1" maxlength="30" size="20">
+                 </label>
+                <label>
+                    По батькові:
+                    <input type="text" id="middleName" name="middleName" minlength="1" maxlength="30" size="20">
+                </label>
+                <label>
+                Дата народження:
+                <input type="date" id="dateOfBirth" name="dateOfBirth" style="font-style:italic">
+                </label>
+            <h2>Статева приналежність:</h2>
+            <section class="gender">
+            <ul >
+                <li>
+                    <label for="man">Чоловік</label>
+                        <input type="radio" name="gender" value="man" id="man">
+                </li>
+                <li>
+                    <label for="woman">Жінка</label>
+                        <input type="radio" name="gender" value="woman" id="woman">
+                    </label>
+                </li>
+                <li>
+                    <label for="other">Інше</label>
+                        <input type="radio" name="gender" value="other" id="other">
+                </li>
+            </ul>
+            </section>
+            <h2>Контактні данні:</h2>
+            <label>
+                    Номер телефону:
+                    <input type="text" id="telNumber" name="telNumber" placeholder="+38(***)*******" style="font-style:italic">
+                </label>
+                <label>
+                    Адреса електронної пошти:
+                    <input type="email" name="email" placeholder="email" style="font-style:italic">
+                </label>
+            <section class="adress">
+                <h2>Поштова адреса:</h2>
+                <label>
+                    Індекс:
+                    <input type="text" id="zip" name="zip" minlength="1" maxlength="30" size="10">
+                </label>
+                <label>
+                    Місто:
+                    <input type="text" id="city" name="city" minlength="1" maxlength="30" size="10">
+                </label>
+                <label>Вулиця:
+                    <input type="text" id="street" name="street" minlength="1" maxlength="30" size="30">
+                </label>
+                <label>Номер будинку:
+                    <input type="text" id="house" name="house" minlength="1" maxlength="30" size="10">
+                </label>
+                <label>
+                    Квартира:
+                    <input type="text" id="flat" name="flat" minlength="1" maxlength="30" size="10">
+                </label>
+            </section>
+            <h2>Сфера інтересів:</h2>
+            <section class="interests">
+                <label class="interest">Політика
+                    <input type="checkbox" name="Politics" id="Politics" value=true>
+                </label>
+                <label class="interest">Економіка, бізнес
+                    <input type="checkbox" name="Economics" id="Economics" value=true>
+                </label>
+                <label class="interest">Наука
+                    <input type="checkbox" name="Science" id="Science" value=true>
+                </label>
+                <label class="interest">Розваги, ігри
+                    <input type="checkbox" name="Entertainment" id="Entertainment" value=true>
+                </label>
+                <label class="interest">Музика
+                    <input type="checkbox" name="Music" id="Music" value=true>
+                </label>
+                <label class="interest">Знайомства, відносини
+                    <input type="checkbox" name="Relations" id="Relations" value=true>
+                </label>
+            </section>
+
+            <label class="user-agree">
+                <input type="checkbox" name="user-agree" value="agree" onchange="manage(this)">
+                <p><em>Надаю згоду на обробку персональних даних, з умовами користування ресурсом ознайомлений та згоден.</em></p>
+            </label>
+            <button type="submit" id="btSubmit" title="Submit and Send" disabled>Підтвердити</button>
+        </section>
+        </form>
+    </main>
+    <footer>
+        <p>Site - Українська правда, © Copyright </p>
+        <p>Иллюстрация Гюстава Доре к роману «Дон Кихот» - Это произведение находится в общественном достоянии в тех странах, где срок охраны авторского права равен жизни автора плюс 100 лет и менее. </p>
+    </footer>
+</body>
+
+</html>
